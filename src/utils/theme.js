@@ -11,6 +11,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
+      'Hammersmith One',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',

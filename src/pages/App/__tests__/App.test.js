@@ -7,11 +7,4 @@ describe('App', () => {
     expect(getByText('Markdown')).toBeInTheDocument();
     expect(getByText('Preview')).toBeInTheDocument();
   });
-
-  it('should handle onInputChange function', () => {
-    const { getByTestId } = render(<App />);
-    const textAreaInput = getByTestId('markdownInput').children[0];
-    fireEvent.change(textAreaInput, { target: { value: 'abc' } });
-    expect(textAreaInput.value).toBe('abc');
-  });
 });
